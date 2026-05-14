@@ -28,6 +28,15 @@ cd ~/.vim
 ./install_formatters.sh
 cd ../
 
+# Install Tmux
+sudo dnf -y install tmux
+
+git clone https://github.com/vtannguyen/tmux-conf.git
+cd tmux-conf
+./install.sh
+cd ../
+rm -rf tmux-conf
+
 # Setup bash aliases
 cat <<EOF >> ~/.bashrc
 alias ..="cd .."
