@@ -22,6 +22,7 @@ git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
 ~/.fzf/install --all
 
 # Install Vim
+sudo dnf install vim
 git clone https://github.com/vtannguyen/vim-dotfiles.git ~/.vim && cp ~/.vim/.vimrc ~/
 cd ~/.vim
 ./install_formatters.sh
